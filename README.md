@@ -1,6 +1,21 @@
 # CryptoClustering
 Module 19 Challenge
 
+## Summary
+
+I begin by employing the elbow curve technique, utilizing normalized data, to determine the most suitable 'k' value for the K-Means model, which will incorporate all the original features of the dataset.
+![Original Elbow](https://github.com/Nicole-Ham/CryptoClustering/assets/134648078/db0ad030-8715-441a-ad7d-4a17e983f0d9)
+
+Subsequently, leveraging the ideal 'k' value, I train and apply the K-Means model to create four clusters of cryptocurrencies. The inertia of each cluster was substantial, prompting consideration for feature dimensionality reduction.
+![Original Scatter](https://github.com/Nicole-Ham/CryptoClustering/assets/134648078/84bc329d-f914-4b8c-90dc-c00fe4af0cd8)
+
+In an effort to further streamline the feature set, I employed Principal Component Analysis (PCA) to establish three primary clusters. Subsequently, I leveraged the PCA-derived data to once more determine the optimal 'k' value for the K-Means model.
+![PCA Elbow](https://github.com/Nicole-Ham/CryptoClustering/assets/134648078/6f57f9a1-7b08-46b5-adb5-a190a4304242)
+
+
+Finally, having identified the optimal 'k' value for the PCA-derived features, I visualize the resulting clusters in a plot.
+![PCA Scatter](https://github.com/Nicole-Ham/CryptoClustering/assets/134648078/71925a8c-d2ea-42e7-9adc-3c27063c2b2a)
+
 ## Requirements
 
 Prepare the Data
